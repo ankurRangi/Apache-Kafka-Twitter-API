@@ -33,10 +33,10 @@ import kafka
 (Every Key is unique and limited)
 """
 
-twitterApiKey = 'xKHMkgsawR9tZDvusNFHwubqS'
-twitterApiSecret = 'VYO5AfWvhbsi9XYt2jhLASrBxlpwY8DXLarKOczaTyzMtw1r19'
-twitterApiAccessToken = '1661809220-mTrTqBO7sv2X6ErkxzNDD7Rv04P6fk84cDK40xr'
-twitterApiAccessTokenSecret = 'hGKDlk5NhenPdZ5RuIiy2xJAjF2OmfMuBc7EdxqS7FYfV'
+twitterApiKey = 'xKH*******************ubqS'
+twitterApiSecret = 'VYO5A******************************tw1r19'
+twitterApiAccessToken = '1661**************************************DK40xr'
+twitterApiAccessTokenSecret = 'hGKDl***************************************qS7FYfV'
 
 class StdOutListener(StreamListener):
     def on_data(self, data):
@@ -64,4 +64,5 @@ auth = OAuthHandler(twitterApiKey, twitterApiSecret)
 auth.set_access_token(twitterApiAccessToken, twitterApiAccessTokenSecret)
 stream = Stream(auth, listener)
 stream.filter(track=query)
+#the code was throwingthe error:
 #KafkaTimeoutError: Failed to update metadata after 60.0 secs.
