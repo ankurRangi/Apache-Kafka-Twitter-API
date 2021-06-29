@@ -64,5 +64,4 @@ auth = OAuthHandler(twitterApiKey, twitterApiSecret)
 auth.set_access_token(twitterApiAccessToken, twitterApiAccessTokenSecret)
 stream = Stream(auth, listener)
 stream.filter(track=query)
-#the code was throwingthe error:
 #KafkaTimeoutError: Failed to update metadata after 60.0 secs.
